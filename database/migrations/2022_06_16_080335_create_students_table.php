@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('last_name');
             $table->unsignedInteger('sex');
-            $table->date('birth');
+            $table->year('birth')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
